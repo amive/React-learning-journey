@@ -2,25 +2,9 @@ import nigga from "./assets/nigga.png";
 import amine from "./assets/amine.png";
 import weeknd from "./assets/weeknd.png";
 import viking from "./assets/viking.png";
+import Header from "./components/Header.jsx";
+import DumbShit from "./components/DumbShit.jsx";
 
-function Header() {
-  return (
-    <header>
-      <h1>React Essentials</h1>
-      <p>learning react!</p>
-    </header>
-  );
-}
-
-function DumbShit({ image, price, features }) {
-  return (
-    <li>
-      <img src={image} />
-      <h2>{price}</h2>
-      <p>{features}</p>
-    </li>
-  );
-}
 function App() {
   return (
     <div>
