@@ -1,0 +1,42 @@
+/* Style TabButton.jsx */
+#Examples-h2 {
+  color: rgba(71, 200, 255, 0.646);
+}
+button {
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  color: inherit;
+  cursor: pointer;
+  font-family: "Minecraftia";
+  font-size: 1em;
+  padding: 12px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(148, 255, 205, 0.062);
+  border-radius: 8px;
+}
+#TabButton-li {
+  list-style-type: none;
+}
+#Examples-menu {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+/*Mobile responsiveness */
+@media (max-width: 600px) {
+  button {
+    font-size: 0.8em;
+    padding: 8px 12px;
+  }
+
+  #TabButton-Button {
+    font-size: 0.8em;
+    padding: 8px 12px;
+  }
+}
