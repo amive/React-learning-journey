@@ -1,7 +1,14 @@
+@font-face {
+  font-family: "Minecraftia";
+  src: url("./assets/fonts/Minecraftia.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
-  font-family: Minecraftia;
+  font-family: "Minecraftia";
   line-height: 1.5;
-  font-weight: 00;
+  font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(148, 255, 205, 0.36);
