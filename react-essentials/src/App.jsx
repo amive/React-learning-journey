@@ -1,9 +1,11 @@
 import { useState } from "react";
 import nigga from "./assets/images/nigga.png";
+import mohamed from "./assets/images/mohamed.png";
 import amine from "./assets/images/amine.png";
 import weeknd from "./assets/images/weeknd.png";
 import viking from "./assets/images/viking.png";
 import niggaExample from "./assets/images/niggaExample.png";
+import mohamedExample from "./assets/images/mohamedExample.png";
 import amineExample from "./assets/images/amineExample.png";
 import weekndExample from "./assets/images/weekndExample.png";
 import vikingExample from "./assets/images/vikingExample.png";
@@ -33,7 +35,11 @@ function App() {
               price="$1.69"
               features="Obeys and works for free with less food"
             />
-
+            <DumbShit
+              image={mohamed}
+              price="shomil"
+              features="حانت لحظتك عطوة"
+            />
             <DumbShit
               image={amine}
               price="Can't put a price on cuz i'm the best"
@@ -54,6 +60,9 @@ function App() {
           <menu id="Examples-menu">
             <TabButton onClick={() => clickHandler(niggaExample)}>
               Nigga
+            </TabButton>
+            <TabButton onClick={() => clickHandler(mohamedExample)}>
+              Mohamed
             </TabButton>
             <TabButton onClick={() => clickHandler(amineExample)}>
               Amine
