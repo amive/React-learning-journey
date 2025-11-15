@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./components/Examples/Examples.css";
 import nigga from "./assets/images/nigga.png";
 import mohamed from "./assets/images/mohamed.png";
 import amine from "./assets/images/amine.png";
@@ -9,13 +10,12 @@ import mohamedExample from "./assets/images/mohamedExample.png";
 import amineExample from "./assets/images/amineExample.png";
 import weekndExample from "./assets/images/weekndExample.png";
 import vikingExample from "./assets/images/vikingExample.png";
-import ClickAButton from "./assets/images/ClickAButton.png";
 import Header from "./components/Header/Header.jsx";
 import DumbShit from "./components/DumbShit/DumbShit.jsx";
 import TabButton from "./components/Examples/TabButton.jsx";
 
 function App() {
-  const [selectedExample, setSelectedExample] = useState(ClickAButton);
+  const [selectedExample, setSelectedExample] = useState();
 
   function clickHandler(selectedButton) {
     setSelectedExample(selectedButton);
@@ -55,28 +55,32 @@ function App() {
             />
           </ul>
         </section>
+        <h2 id="Examples-h2">Examples</h2>
+        <menu id="Examples-menu">
+          <TabButton onClick={() => clickHandler(niggaExample)}>
+            Nigga
+          </TabButton>
+          <TabButton onClick={() => clickHandler(mohamedExample)}>
+            Mohamed
+          </TabButton>
+          <TabButton onClick={() => clickHandler(amineExample)}>
+            Amine
+          </TabButton>
+          <TabButton onClick={() => clickHandler(weekndExample)}>
+            Weeknd
+          </TabButton>
+          <TabButton onClick={() => clickHandler(vikingExample)}>
+            Viking
+          </TabButton>
+        </menu>
         <section>
-          <h2 id="Examples-h2">Examples</h2>
-          <menu id="Examples-menu">
-            <TabButton onClick={() => clickHandler(niggaExample)}>
-              Nigga
-            </TabButton>
-            <TabButton onClick={() => clickHandler(mohamedExample)}>
-              Mohamed
-            </TabButton>
-            <TabButton onClick={() => clickHandler(amineExample)}>
-              Amine
-            </TabButton>
-            <TabButton onClick={() => clickHandler(weekndExample)}>
-              Weeknd
-            </TabButton>
-            <TabButton onClick={() => clickHandler(vikingExample)}>
-              Viking
-            </TabButton>
-          </menu>
-        </section>
-        <section>
-          <img src={selectedExample}></img>
+          {!selectedExample ? (
+            <p id="Choose-One"> ꜛ اختر واحدة ꜛ </p>
+          ) : (
+            <section>
+              <img src={selectedExample}></img>
+            </section>
+          )}
         </section>
       </main>
     </div>

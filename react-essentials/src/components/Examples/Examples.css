@@ -28,6 +28,31 @@ button:hover {
   justify-content: center;
   gap: 12px;
 }
+@keyframes blink {
+  0% {
+    opacity: 0;
+    color: blue;
+  }
+  50% {
+    opacity: 1;
+    color: red;
+  }
+  100% {
+    opacity: 0;
+    color: green;
+  }
+}
+
+#Choose-One {
+  display: flex;
+  justify-content: center;
+  font-family:
+    "Traditional Arabic", "Simplified Arabic", "Arabic Typesetting", Arial,
+    sans-serif;
+  font-weight: 900;
+  color: rgba(215, 215, 215, 0.583);
+  animation: blink 2s infinite;
+}
 /*Mobile responsiveness */
 @media (max-width: 600px) {
   button {

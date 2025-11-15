@@ -4,7 +4,7 @@ export default function DumbShit({ image, price, features }) {
     <li>
       <img src={image} />
       <h2>{price}</h2>
-      <p>{features}</p>
+      <p id="features-p">{features}</p>
     </li>
   );
 }
